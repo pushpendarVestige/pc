@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS button
+        </title>
+        <style>
+            
+            .button{
+                background-color:#4CAF50;
+                outline: none;
+                border:none;
+                padding: 20px 60px;
+                color:white;
+                font-size: 20px;
+                cursor:pointer;
+                margin-left:50px;
+                margin-top: 10px;
+                border-radius: 10%;
+
+            }
+            .disabled{
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+
+            button{
+                background-color: white;
+                padding:20px 100px;
+                border:2px solid blue;
+                font-size:20px;
+                cursor:pointer;
+                margin-left:50px;
+                margin-top: 10px;
+                border-radius:7px;
+                outline: none;
+                transition-duration: 0.4s;
+                color: blue;
+
+            }
+            button:hover{
+                background-color: blue;
+                color:white;
+            }
+            .btn{
+            
+                background-color: red;
+                padding:20px 100px;
+                border:2px solid red;
+                font-size:20px;
+                cursor:pointer;
+                margin-left:50px;
+                margin-top: 10px;
+                border-radius:7px;
+                outline: none;
+                color: white;
+                transition-duration: 0.4s ;
+
+            }
+            .btn:hover{
+                background-color: white;
+                color:red;
+                border:2px solid red;
+            }
+            .button01:not(.button){
+                background-color: #4CAF50;
+                color:white;
+                font-size:20px;
+                cursor:pointer;
+                margin-left: 50px;
+                margin-top: 10px;
+                outline:none;
+                border:none;
+                border-radius: 0px;
+            }
+            .button02{
+                box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+            }
+            .btnhover01:not(.button){
+                background-color:grey;
+                color:white;
+                font-size:20px;
+                cursor:pointer;
+                margin-left: 50px;
+                margin-top: 20px;
+                outline:none;
+                border:none;
+                border-radius:  5px;
+                transition-duration: 0.4s;
+            }
+            .btnhover:hover{
+                box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+            }
+            .groupbtn{
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-left: 1px solid black;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+    
+    
+
+            }
+            .gofbtn{
+                margin-left: 50px;
+                
+                
+
+            }
+            .groupbtn:hover{
+                background-color:#3e8e41;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <input type="button" class="button disabled" value="Disabled Button"><br>
+        <button >Button</button><br>
+        <button class="btn">Button</button><br>
+        <button class="button01 button02">Button</button><br>
+        <button class="btnhover01 btnhover">Button</button><br>
+        <div class="gofbtn">
+        <div class="groupbtn">Home</div>
+        <div class="groupbtn">Services</div>
+        <div class="groupbtn">Photoes</div>
+        <div class="groupbtn">Contact</div>
+        <div class="groupbtn">About</div>
+        </div>
+
+
+
+
+    </body>
+</html>
